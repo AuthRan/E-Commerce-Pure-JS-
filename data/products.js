@@ -296,7 +296,7 @@ const products = [
   {
     id: "b0f17cc5-8b40-4ca5-9142-b61fe3d98c85",
     image: "images/products/women-stretch-popover-hoodie-black.jpg",
-    name: "Women's Stretch Popover Hoodie",
+    name: "Womens Stretch Popover Hoodie",
     rating: {
       stars: 4.5,
       count: 2465
