@@ -1,4 +1,4 @@
-import {cart} from '../data/cart.js'
+import {cart, saveToStorage} from '../data/cart.js'
 import { products } from '../data/products.js';
 
 let productsHTML = '';
@@ -85,6 +85,7 @@ document.querySelectorAll('.js-add-to-cart')
         cartQuantity += item.quantity;
       })
       document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+      saveToStorage();
     })
  
  
