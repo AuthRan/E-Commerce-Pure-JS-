@@ -87,7 +87,7 @@ document.querySelectorAll('.js-add-to-cart')
     })
  
  
-    //We created this to understand the array we are creating
+  // We created this to understand the array we are creating Hehe smjh jana yrr if man kare
   // const products = [{
   //     image: 'images/products/athletic-cotton-socks-6-pairs.jpg',
   //     name: 'Black and Gray Athletic Cotton Socks - 6 Pairs',
