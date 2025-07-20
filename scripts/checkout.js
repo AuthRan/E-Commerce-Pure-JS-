@@ -80,7 +80,9 @@ function deliveryOptionsHTML(matchingItem) {
                 ${dateString}
             </div>
             <div class="delivery-option-price">
-                ${priceString} Shipping
+                ${priceString} Shi
+                
+                pping
             </div>
             </div>
         </div>
