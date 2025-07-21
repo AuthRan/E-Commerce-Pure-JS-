@@ -1,4 +1,4 @@
-import { cart, removeFromCart } from "../data/cart.js";
+import { cart, removeFromCart, updateDeliveryOption } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { hello } from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
@@ -100,7 +100,7 @@ function deliveryOptionsHTML(matchingItem) {
       ? 'FREE'
       : `$${(options.priceCent) / 100} -`;
     html += `
-        <div class="delivery-option">
+        <div class="delivery-option js-delivery-option" data-product-id="${matchingItem.id}" data-delivery-option-id="${diliveryOptions.id}">
             <input type="radio" checked
             class="delivery-option-input"
             name="delivery-option-${matchingItem.id}">
@@ -141,4 +141,10 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
 const today = dayjs();
 const deliveryDate = today.add(7, 'days');
 // console.log(deliveryDate.format('dddd, MMMM D'));
-
+document.querySelectorAll('.js-delivery-option')
+  .forEach((element) => {
+    element.addEventListener('click', () => {
+      const {productId, deliveryOptionId} = element.dataset;
+      updateDeliveryOption(productId, deliveryOptionId)
+    });
+  });
