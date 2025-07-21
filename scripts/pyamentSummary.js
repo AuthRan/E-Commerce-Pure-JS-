@@ -64,3 +64,5 @@ export function renderPaymentSummary() {
     document.querySelector('.js-payment-summary').innerHTML = paymmentSummaryHTML;
 
 };
+
+// Make sure to do automated tests
