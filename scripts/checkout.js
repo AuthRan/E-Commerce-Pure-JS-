@@ -137,8 +137,8 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
   });
 });
 
-hello();
+// hello();
 const today = dayjs();
 const deliveryDate = today.add(7, 'days');
-console.log(deliveryDate.format('dddd, MMMM D'));
+// console.log(deliveryDate.format('dddd, MMMM D'));
 
